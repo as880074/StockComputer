@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,95 @@
     <link rel="stylesheet" href="css/style.css">
     <title>股票試算機</title>
 </head>
+
 <body>
-    
+    <main class="warp">
+        <section class="data-input">
+            <ul class="menu">
+                <li>
+                    <div><img src="/images/dolla.png" alt="">定期定額</div>
+                </li>
+                <li>
+                    <div><div><img src="/images/icon_dashboard.svg" alt="">定期定值</div>
+                </li>
+                <li>
+                    <div><div><img src="/images/icon_home.svg" alt="">定期定股</div>
+                </li>
+            </ul>
+
+            <div class="container">
+                <select class="stock-code">
+                    <option>請選擇標的</option>
+                    <option>Dog <span>0050</span></option>
+                    <option>Cat</option>
+                    <option>Hamster</option>
+                    <option>Parrot</option>
+                    <option>Spider</option>
+                    <option>Goldfish</option>
+                </select>
+                <ul class="date">
+                    <li>
+                        <label for="start-date">起始日</label>
+                        <input type="date" name="" id="start-date">
+                    </li>
+                    <li>
+                        <label for="redemption-date">贖回日</label>
+                        <input type="date" name="" id="redemption-date">
+                    </li>
+                    <li>
+                        <label for="deduction-date">每月扣款日</label>
+                        <input type="text" name="" id="deduction-date">
+                    </li>
+                    <li>
+                        <label for="deduction-amount">每次扣款金額</label>
+                        <div class="deduction-amount">
+                            <input type="text" name="" id="deduction-amount">
+                            <select>
+                                <option>USD</option>
+                                <option>TW</option>
+                                <option>Cat</option>
+                            </select>
+                        </div>
+                        <p>以最新報價可買到 285.12 股</p>
+                    </li>
+                </ul>
+
+
+                <ul class="investment-method">
+                    <li>
+                        <label for='compound-interest'>股利是否再投資</label>
+                        <div class="compound-interest">
+                            <input type="radio" id="compound-interest" name="asd" value="Y" checked>是
+                            <input type="radio" id="compound-interest" name="asd" value="N">否
+                        </div>
+                    </li>
+                    <li>
+                        <label for="">手續費收費方式</label>
+
+                        <div class="fee-method">
+                            <input type="radio" id="fee-method" name="無" value="Y">無
+                            <input type="radio" id="fee-method" name="前收" value="N">前收
+                            <input type="radio" id="fee-method" name="後收" value="Y">後收
+                            <input type="radio" id="fee-method" name="前後均收" value="N">前後均收
+                        </div>
+                    </li>
+                    <li>
+                        <label for="handling-fee">手續費率</label>
+                        <p>0.1425 % 或 0 元</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="calution-button">開始計算<img src="/images/calculator.png" alt="" srcset=""></button>
+
+        </section>
+        <section class="result">
+            <div class="container">
+                <img src="/images/humaaans.png" alt="">
+                <p>請輸入計算條件...</p>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>
